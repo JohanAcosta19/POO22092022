@@ -10,14 +10,14 @@ import javax.swing.JOptionPane;
  *
  * @author johanacosta19
  */
-public class JavaBasico2209 {
+public class PruebaEjemplo {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int edad = 20;
+        /*int edad = 20;
                 System.out.println("Edad = "+ edad);
                 Integer edad2 = new Integer(22);
                 System.out.println(edad2);
@@ -101,16 +101,52 @@ public class JavaBasico2209 {
                     lista[4] = new Alumno("88888", 2, 8.0f);
                     lista[5] = new Alumno("66666", 2, 6.0f);
                     
-                    for (int i = 0; i < lista.length; i++) {
-                        Alumno alumno = lista[i];
-                        System.out.println(alumno.evaluarDesempenio());
-                     
-                        System.out.println("Con for each ...");
-                        for (Alumno alumno1 : lista) {
-                            System.out.println(alumno.evaluarDesempenio());
-                        }
-                    }
+            for (Alumno alumno : lista) {
+                System.out.println(alumno.evaluarDesempenio());
+                
+                System.out.println("Con for each ...");
+                for (Alumno alumno1 : lista) {
+                    System.out.println(alumno.evaluarDesempenio());
+*/
+                    
+                    System.out.println("-------------------------------------------------------------------------");
+                    System.out.println("Arreglo de cuentahabientes");
+                    String[] nombres = new String [5];
+                    nombres[0]="Juan";
+                    nombres[1]="Alejandro";
+                    nombres[2]="Elizabeth";
+                    nombres[3]="Jorge";
+                    nombres[4]="Laura";
+                    for(String nombre : nombres)
+                    {
                 }
+                    int[] idCliente = {3984,7523,5539,9900,2573};
+                    float[] balance = {40000,100000,1000000,3000,70000};
+                    String Juan     =  ("Nombre: " + nombres [0] + " ID: " + idCliente [0]+ " Tu balance es de: " + balance [0] );
+                    String Alejandro     =  ("Nombre: " + nombres [1] + " ID: " + idCliente [1]+ " Tu balance es de: " + balance [1] );
+                    String Elizabeth     =  ("Nombre: " + nombres [2] + " ID: " + idCliente [2]+ " Tu balance es de: " + balance [2] );
+                    String Jorge    =  ("Nombre: " + nombres [3] + " ID: " + idCliente [3]+ " Tu balance es de: " + balance [3] );
+                    String Laura     =  ("Nombre: " + nombres [4] + " ID: " + idCliente [4]+ " Tu balance es de: " + balance [4] );
+                    
+                    System.out.println(Juan);
+                    System.out.println(Alejandro);
+                    System.out.println(Elizabeth);
+                    System.out.println(Jorge);
+                    System.out.println(Laura);
+                    
+                    String res = "";
+        for (float i:balance){
+            if( i < 50000){
+                res = "Cliente Regular";
+            }else{
+                res = "Cliente Premium";
+            }
+            System.out.println( "Nivel de los clientes):  "  + res );
+            
+        }
+                }
+            }
+        }
     }
     
 }
