@@ -22,6 +22,10 @@ public class Alumno {
         this.promedio = promedio;
     }
 
+    Alumno(String string, int i, int i0, float f) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     public float getPromedio() {
         return promedio;
     }

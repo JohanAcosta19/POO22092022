@@ -4,6 +4,7 @@
  */
 package javabasico2209;
 
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 /**
@@ -142,11 +143,51 @@ public class PruebaEjemplo {
                 res = "Cliente Premium";
             }
             System.out.println( "Nivel de los clientes):  "  + res );
+            System.out.println("-----------------------------------------");
             
-        }
+            ArrayList<Alumno> grupo2209= new ArrayList<Alumno>();
+            grupo2209.add(new Alumno("9999", 2, 9,0f));
+            grupo2209.add(new Alumno("8888", 2, 9,0f));
+            grupo2209.add(new Alumno("7777", 2, 9,0f));
+            grupo2209.add(new Alumno("8888", 2, 9,0f));
+            grupo2209.add(new Alumno("9999", 2, 9,0f));
+            
+            for (Alumno alumno : grupo2209){
+                System.out.println(alumno);
+            }
+            
+            Alumno tmp = grupo2209.get(1);
+            System.out.println("Alumno en index = 1 :"+ tmp);
+            
+            System.out.println("Eliminar el index 3");
+            Alumno  tmp2 = grupo2209.remove(3);
+            System.out.println("Elemento sacado = " + tmp2);
+            
+            for(Alumno alumno : grupo2209){
+                System.out.println(alumno);
+            }
+            System.out.println("Desplazar el i-esimo elemento");
+            grupo2209.set(0, new Alumno("44444", 4, 4.0f));
+                        String tmp3 = null;
+            System.out.println("El sacado es= " + tmp3);
+            for (Alumno alumno : grupo2209) {
+                System.out.println(alumno);
+                
+            }
+            try {
+                System.out.println("Excepciones");
+            System.out.println(grupo2209.get(20));
+            } catch (Exception e) {
+            }
+        
+            System.out.println("Excepciones");
+            System.out.println(grupo2209.get(20));
+            
+                
+        
                 }
             }
-        }
-    }
     
-}
+        }
+    
+
